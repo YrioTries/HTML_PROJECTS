@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабороторная работа 1</title>
+    <!-- Подключение bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel = "stylesheet" type="text/css" href = "style.css"/>
+
+    <!-- Подключение js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Ограничение картинки и стиль -->
+    <style>
+      .rounded-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        padding: 0.2em;
+        margin-bottom: 1em;
+      }
+    </style>
+
+<style>
+  .txtbond {
+    background-color: black;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 10px;
+  }
+</style>
+
+<style>
+  .txtr {
+    background-color: black;
+  }
+</style>
+
+<style>
+  .txtleft {
+    background-color: black;
+    color: white;
+    border-left: 6px solid orange;
+    padding: 10px;
+  }
+</style>
+  </head>
+
+  <body style="color:black">
+    background-color: black;
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/"
+          ><img src="PIB.png" alt="Logo" width="60" />
+        </a>
+        <!-- Кнопки навигации-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <!-- Активная кнопка страницы -->
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="places.html">Favorite places</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Класс контейнер (сетка) для размещения на сайте элементов -->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <img class="rounded-img" src="img.jpg1.jpg" alt="Котофото" />
+          <h1 class="fw-light">Это моя вторая HTML страница</h1>
+          <h1 class="text-muted">О себе:</h1>
+          <p class="text-muted">
+            <b>Я родился давным давно,</b> <br />
+            <del>учился на микробиолога,</del><br /><i> жил на палубе,</i
+            ><br />и ел манго
+          </p>
+
+          <h2 class="text-muted">Как связаться со мной:</h2>
+
+          <!-- btn необходимо для крутой кнопки -->
+          <a
+            href="https://vk.com/esenin_is_dead"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            Моя страница VK
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="col-lg-10 col-md-2 mx-auto">
+      
+      <h2 class="text-muted"> Какие фильмы мне нравятся</h2>
+      <li class="text-muted">Живая сталь</li>
+      <li class="text-muted">Интерстеллар</li>
+      <li class="text-muted">Война миров</li>
+    </ul>
+    <br />
+    <ol class="col-lg-10 col-md-2 mx-auto">
+      <h2 class="text-muted">Какие фильмы мне нравятся</h2>
+      <li class="text-muted">Металкор</li>
+      <li class="text-muted">Ню-метал</li>
+      <li class="text-muted">Панк-рок</li>
+      <li class="text-muted">Классическая музыка</li>
+      <li class="text-muted">Да и все остальные в целом</li>
+    </ul>
+  </body>
+</html>
