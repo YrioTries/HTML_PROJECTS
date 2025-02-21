@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My awesome page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      .rounded-img {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        padding: 0.2em;
+        margin-bottom: 1em;
+      }
+    </style>
+    <style>
+      .carousel-item {
+        height: 47rem;
+        background: #777;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/"
+          ><img src="PIB.png" alt="Logo" width="60" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="info.html">Home</a>
+            <a class="nav-link" href="filmss.html">films</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Page navigation
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="#foto">Фото актёра</a></li>
+                <li><a class="dropdown-item" href="#text">Краткая информация</a></li>
+                <li><a class="dropdown-item" href="#carouselExample">Карусель</a></li>
+                <li><a class="dropdown-item" href="#post">Постеры</a></li>
+                <li><a class="dropdown-item" href="#bio">Биография</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <img id="foto" class="rounded-img" src="kn.jpg" alt="BOOOOM!!!" />
+          <h1 id="text" class="fw-light">Станислав Владимирович Концевич</h1>
+          <p class="text-muted">Популярный актёр театра, кино и озвучивания. Диктор федерального уровня. Голос, который узнаётся с первого предложения!</p>
+          <p>
+            <button id="bio" class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Краткая биография
+            </button>
+          </p>
+          <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 600px;">
+                Родился 21 июня 1964 года в Ленинграде. Окончил ЛГИТМИК (1990, курс Е.Падве). 1990-1994 - преподавал актерское мастерство в ЛГИТМИКе. Работал в "Интерателье", Молодежном театре, театре "Эксперимент". 2002 - записал альбом "Гена Лягушкин и Птица Додо". Актер дубляжа, ведущий ряда телепередач.
+                <a
+                href="https://ru.wikipedia.org/wiki/Концевич,_Станислав_Владимирович"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Перейти в Wiki
+              </a>
+              </div>
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Карусель -->
+    <div id="carouselExample" class="carousel slide" class="carousel-item">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="k.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="4.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="r.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="5.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="post" class="container text-center my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img src="mib.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Люди в чёрном</h5>
+              <p class="card-text">
+                Они - самый большой секрет Земли. Они работают на неофициальное правительственное агентство, регулирующее деятельность инопланетян на Земле. Они - это лучшая, последняя и единственная линия защиты Земли от отбросов вселенной. Их работа секретна, их оружие совершенно, им нет равных.
+              </p>
+              <a href="https://www.kinopoisk.ru/film/1091/?utm_referrer=www.google.ru" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="bignut.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Крепкий орешек</h5>
+              <p class="card-text">
+                В суперсовременном небоскребе Лос-Анджелеса полицейский Джон Макклейн ведет смертельную схватку с бандой политических террористов, взявших в заложники два десятка человек, в число которых попадает и его жена.
+              </p>
+              <a href="https://www.kinopoisk.ru/film/471/" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="tron.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Трон: Наследие</h5>
+              <p class="card-text">
+                Сэм Флинн, технически одарённый 27-летний сын Кевина Флинна, начинает расследовать исчезновение своего отца и оказывается втянутым в тот же мир жестоких программ и гладиаторских игр, в котором его отец жил на протяжении 20 лет.
+              </p>
+              <a href="https://www.kinopoisk.ru/film/399959/" class="btn btn-primary">Перейти</a>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
